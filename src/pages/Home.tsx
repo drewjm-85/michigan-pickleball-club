@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { clubFoundedYear, sponsors, tournaments, tryoutInfo } from '../data/club'
+import { galleryPhotos, heroPhoto, sponsorLogos } from '../data/gallery'
 
 export default function Home() {
   const yearsRunning = new Date().getFullYear() - clubFoundedYear
@@ -15,30 +16,41 @@ export default function Home() {
           }}
           aria-hidden="true"
         />
-        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 py-20 sm:py-28">
-          <p className="font-mono-num text-maize text-xs tracking-[0.2em] uppercase mb-4">
-            University of Michigan &middot; Est. {clubFoundedYear}
-          </p>
-          <h1 className="text-white text-5xl sm:text-6xl font-semibold max-w-3xl">
-            Michigan Pickleball Club
-          </h1>
-          <p className="mt-5 max-w-xl text-white/80 text-lg leading-relaxed normal-case font-body">
-            Maize, blue, and the kitchen line. We're a student-run competitive and
-            social pickleball club, {yearsRunning} years strong.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              to="/tryouts"
-              className="bg-maize text-navy font-display uppercase tracking-wide text-sm px-6 py-3 hover:bg-maize-soft transition-colors"
-            >
-              Tryout Info — Sep {tryoutInfo.days[0].date.split(' ')[1]}–{tryoutInfo.days[1].date.split(' ')[1]}
-            </Link>
-            <Link
-              to="/contact"
-              className="border border-white/40 text-white font-display uppercase tracking-wide text-sm px-6 py-3 hover:border-maize hover:text-maize transition-colors"
-            >
-              Get in Touch
-            </Link>
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <p className="font-mono-num text-maize text-xs tracking-[0.2em] uppercase mb-4">
+              University of Michigan &middot; Est. {clubFoundedYear}
+            </p>
+            <h1 className="text-white text-5xl sm:text-6xl font-semibold max-w-3xl">
+              Michigan Pickleball Club
+            </h1>
+            <p className="mt-5 max-w-xl text-white/80 text-lg leading-relaxed normal-case font-body">
+              Maize, blue, and the kitchen line. We're a student-run competitive and
+              social pickleball club, {yearsRunning} years strong.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                to="/tryouts"
+                className="bg-maize text-navy font-display uppercase tracking-wide text-sm px-6 py-3 hover:bg-maize-soft transition-colors"
+              >
+                Tryout Info — Sep {tryoutInfo.days[0].date.split(' ')[1]}–{tryoutInfo.days[1].date.split(' ')[1]}
+              </Link>
+              <Link
+                to="/contact"
+                className="border border-white/40 text-white font-display uppercase tracking-wide text-sm px-6 py-3 hover:border-maize hover:text-maize transition-colors"
+              >
+                Get in Touch
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative hidden lg:block">
+            <div className="absolute -bottom-4 -right-4 w-full h-full bg-maize" aria-hidden="true" />
+            <img
+              src={heroPhoto.src}
+              alt={heroPhoto.alt}
+              className="relative w-full aspect-4/3 object-cover border-4 border-navy"
+            />
           </div>
         </div>
       </section>
@@ -101,12 +113,44 @@ export default function Home() {
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
             {sponsors.map((s) => (
-              <div key={s.name} className="border-l-2 border-maize pl-4">
-                <p className="font-display text-navy text-lg uppercase tracking-wide">{s.name}</p>
-                <p className="text-xs uppercase tracking-wide text-ink-soft mt-1 font-mono-num">{s.role}</p>
+              <div key={s.name} className="border-l-2 border-maize pl-4 flex flex-col gap-3">
+                <img
+                  src={sponsorLogos[s.name]}
+                  alt={`${s.name} logo`}
+                  className="h-10 w-auto object-contain object-left"
+                />
+                <div>
+                  <p className="font-display text-navy text-lg uppercase tracking-wide">{s.name}</p>
+                  <p className="text-xs uppercase tracking-wide text-ink-soft mt-1 font-mono-num">{s.role}</p>
+                </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
+        <h2 className="text-2xl sm:text-3xl mb-2">From the Courts</h2>
+        <p className="text-ink-soft text-base mb-8 max-w-xl">
+          A look at the club on and off the court.
+        </p>
+        <div className="grid gap-6 sm:grid-cols-3">
+          {galleryPhotos.map((photo) => (
+            <figure key={photo.caption} className="group">
+              <div className="overflow-hidden bg-navy">
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  loading="lazy"
+                  className="w-full aspect-3/4 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <figcaption className="mt-3">
+                <p className="font-display text-navy text-sm uppercase tracking-wide">{photo.caption}</p>
+                <p className="text-ink-soft text-xs mt-1">{photo.detail}</p>
+              </figcaption>
+            </figure>
+          ))}
         </div>
       </section>
 

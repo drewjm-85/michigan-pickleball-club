@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { sponsors } from '../data/club'
+import { sponsorActionPhoto, sponsorLogos } from '../data/gallery'
 
 export default function Sponsors() {
   return (
@@ -14,7 +15,12 @@ export default function Sponsors() {
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-14">
         <div className="grid gap-6 sm:grid-cols-3">
           {sponsors.map((s) => (
-            <div key={s.name} className="bg-white border-t-4 border-maize p-6">
+            <div key={s.name} className="bg-white border-t-4 border-maize p-6 flex flex-col">
+              <img
+                src={sponsorLogos[s.name]}
+                alt={`${s.name} logo`}
+                className="h-14 w-auto object-contain object-left mb-5"
+              />
               <p className="font-display text-navy text-2xl uppercase tracking-wide">{s.name}</p>
               <p className="font-mono-num text-xs uppercase tracking-wide text-ink-soft mt-2">
                 {s.role}
@@ -24,7 +30,19 @@ export default function Sponsors() {
           ))}
         </div>
 
-        <div className="mt-12 bg-navy text-white px-6 py-10 sm:px-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <figure className="mt-10">
+          <img
+            src={sponsorActionPhoto.src}
+            alt={sponsorActionPhoto.alt}
+            loading="lazy"
+            className="w-full max-h-[520px] object-cover object-top border-y-4 border-maize"
+          />
+          <figcaption className="text-ink-soft text-xs mt-2 text-center">
+            Laced in Babolat, swinging PaddleTek, suited up in Muev.
+          </figcaption>
+        </figure>
+
+        <div className="mt-10 bg-navy text-white px-6 py-10 sm:px-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <h2 className="text-white text-2xl">Interested in Sponsoring the Club?</h2>
             <p className="text-white/80 mt-2 max-w-md normal-case font-body">

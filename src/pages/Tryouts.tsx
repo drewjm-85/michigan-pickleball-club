@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { tryoutInfo } from '../data/club'
+import { galleryPhotos } from '../data/gallery'
+
+const tryoutPhoto = galleryPhotos[1]
 
 function InfoRow({ label, value }: { label: string; value: string }) {
   return (
@@ -61,6 +64,11 @@ export default function Tryouts() {
         </div>
 
         <div className="flex flex-col gap-6">
+          <img
+            src={tryoutPhoto.src}
+            alt={tryoutPhoto.alt}
+            className="w-full aspect-4/3 object-cover object-top border-4 border-maize"
+          />
           <div className="border-l-2 border-maize pl-5">
             <h3 className="text-lg mb-2">All Skill Levels Welcome</h3>
             <p className="text-ink-soft text-sm leading-relaxed">
