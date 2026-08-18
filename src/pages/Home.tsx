@@ -147,7 +147,7 @@ export default function Home() {
               </div>
               <figcaption className="mt-3">
                 <p className="font-display text-navy text-sm uppercase tracking-wide">{photo.caption}</p>
-                <p className="text-ink-soft text-xs mt-1">{photo.detail}</p>
+                {photo.detail && <p className="text-ink-soft text-xs mt-1">{photo.detail}</p>}
               </figcaption>
             </figure>
           ))}

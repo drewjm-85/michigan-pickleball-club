@@ -24,13 +24,13 @@ export const galleryPhotos = [
     src: tryoutPair,
     alt: 'Two club members on an indoor pickleball court holding paddles',
     caption: 'On the Court',
-    detail: 'Members warming up between games',
+    detail: '',
   },
   {
     src: vpPairRailing,
-    alt: 'Two exec board members at a club open house event',
-    caption: 'Club Leadership',
-    detail: 'Exec board at the Picklr open house',
+    alt: 'Two club members at a club open house event',
+    caption: 'Close Friendships',
+    detail: '',
   },
 ] as const
 
