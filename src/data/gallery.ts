@@ -17,8 +17,8 @@ export const galleryPhotos = [
   {
     src: checkPresentation,
     alt: 'Kyler Fung and Jacob Liu holding an oversized $300 check',
-    caption: "Kyler Fung & Jacob Liu",
-    detail: "$300, Men's Doubles Div. 5 — JOOLA College Pickleball Tour",
+    caption: 'Tournaments',
+    detail: '',
   },
   {
     src: tryoutPair,
