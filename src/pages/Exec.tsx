@@ -1,13 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { execTeam } from '../data/club'
-
-function initials(name: string) {
-  return name
-    .split(' ')
-    .map((p) => p[0])
-    .join('')
-}
+import { execPhotos } from '../data/gallery'
 
 export default function Exec() {
   return (
@@ -21,11 +15,14 @@ export default function Exec() {
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-14">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {execTeam.map((member) => (
-            <div key={member.name} className="bg-white border border-line p-6 flex flex-col gap-4">
-              <div className="w-14 h-14 bg-navy text-maize font-display font-semibold text-lg flex items-center justify-center">
-                {initials(member.name)}
-              </div>
-              <div>
+            <div key={member.name} className="bg-white border border-line flex flex-col">
+              <img
+                src={execPhotos[member.name]}
+                alt={member.name}
+                loading="lazy"
+                className="w-full aspect-square object-cover border-b-4 border-maize"
+              />
+              <div className="p-6">
                 <p className="font-display text-navy text-lg uppercase tracking-wide leading-snug">
                   {member.name}
                 </p>
