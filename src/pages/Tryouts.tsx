@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { tryoutInfo } from '../data/club'
-import { galleryPhotos } from '../data/gallery'
+import { tryoutsPagePhoto } from '../data/gallery'
 
-const tryoutPhoto = galleryPhotos[1]
+const tryoutPhoto = tryoutsPagePhoto
 
 function InfoRow({ label, value }: { label: string; value: string }) {
   return (

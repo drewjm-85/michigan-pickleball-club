@@ -1,5 +1,6 @@
 import checkPresentation from '../assets/photos/action-check-presentation.jpg'
-import tryoutPair from '../assets/photos/action-tryout-pair.jpg'
+import tryoutGroup from '../assets/photos/action-tryout-pair.jpg'
+import tryoutPairOriginal from '../assets/photos/action-tryout-pair-original.jpg'
 import vpPairRailing from '../assets/photos/action-vp-pair-railing.jpg'
 import teamNavyGroup from '../assets/photos/team-navy-group.jpg'
 import teamWhitePaddletekGroup from '../assets/photos/team-white-paddletek-group.jpg'
@@ -28,8 +29,8 @@ export const galleryPhotos = [
     detail: '',
   },
   {
-    src: tryoutPair,
-    alt: 'Six Michigan Pickleball Club members holding paddles at an indoor tournament',
+    src: tryoutPairOriginal,
+    alt: 'Two club members on an indoor pickleball court holding paddles',
     caption: 'On the Court',
     detail: '',
   },
@@ -46,6 +47,11 @@ export const sponsorLogos = {
   PaddleTek: paddletekLogo,
   Muev: muevLogo,
 } as const
+
+export const tryoutsPagePhoto = {
+  src: tryoutGroup,
+  alt: 'Six Michigan Pickleball Club members holding paddles at an indoor tournament',
+}
 
 export const sponsorActionPhoto = {
   src: teamWhitePaddletekGroup,
