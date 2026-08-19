@@ -6,7 +6,7 @@ import teamNavyGroup from '../assets/photos/team-navy-group.jpg'
 import teamWhitePaddletekGroup from '../assets/photos/team-white-paddletek-group.jpg'
 
 import babolatLogo from '../assets/photos/sponsor-babolat-logo.webp'
-import paddletekLogo from '../assets/photos/sponsor-paddletek-logo.png'
+import paddletekLogo from '../assets/photos/sponsor-paddletek-logo.webp'
 import muevLogo from '../assets/photos/sponsor-muev-logo.png'
 
 import lelandPhoto from '../assets/photos/exec-leland-branco.jpg'
