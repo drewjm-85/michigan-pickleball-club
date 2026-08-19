@@ -17,18 +17,11 @@ function InfoRow({ label, value }: { label: string; value: string }) {
 export default function Tryouts() {
   return (
     <div>
-      <PageHero
-        eyebrow="Fall Tryouts"
-        title="Tryouts"
-        lede="Regardless of skill level, tryouts are a fun event — if you're interested, you should 100% sign up."
-      />
+      <PageHero eyebrow="Fall Tryouts" title="Tryouts" />
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-14 grid gap-10 lg:grid-cols-[1fr_1fr]">
         <div className="bg-white border border-line p-6 sm:p-8">
-          <h2 className="text-xl mb-1">The Details</h2>
-          <p className="text-ink-soft text-sm mb-5">
-            Pick one day — you only need to attend one session.
-          </p>
+          <h2 className="text-xl mb-5">The Details</h2>
 
           <div className="grid sm:grid-cols-2 gap-3 mb-6">
             {tryoutInfo.days.map((d) => (
@@ -73,15 +66,13 @@ export default function Tryouts() {
             <h3 className="text-lg mb-2">All Skill Levels Welcome</h3>
             <p className="text-ink-soft text-sm leading-relaxed">
               Never picked up a paddle? Played competitively for years? Both are
-              welcome. Tryouts are about finding where you fit on the club — not
-              about cutting people out.
+              welcome.
             </p>
           </div>
           <div className="border-l-2 border-maize pl-5">
             <h3 className="text-lg mb-2">Need a Ride?</h3>
             <p className="text-ink-soft text-sm leading-relaxed">
-              Varsity Pickleball in Ypsilanti is a bit of a drive from central
-              campus. Let us know on the signup form if you need a ride and we'll
+              Let us know on the signup form if you need a ride and we'll
               coordinate one for you.
             </p>
           </div>
@@ -98,13 +89,9 @@ export default function Tryouts() {
               Questions?
             </p>
             <p className="text-white/80 text-sm leading-relaxed normal-case font-body">
-              Reach out any time — see the{' '}
+              See the{' '}
               <Link to="/contact" className="underline underline-offset-2">
                 contact page
-              </Link>{' '}
-              or a member of the{' '}
-              <Link to="/exec" className="underline underline-offset-2">
-                exec board
               </Link>
               .
             </p>

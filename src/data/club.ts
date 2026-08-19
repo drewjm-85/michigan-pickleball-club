@@ -35,19 +35,16 @@ export const sponsors = [
   {
     name: 'Babolat',
     role: 'Shoe Sponsor',
-    blurb: 'Outfitting the club with the footwear that keeps us moving from the baseline to the kitchen.',
     url: 'https://www.babolat.com/us/pickleball.html',
   },
   {
     name: 'PaddleTek',
     role: 'Paddle Sponsor',
-    blurb: 'Supplying the paddles our players compete with at every tournament and tryout.',
     url: 'https://www.paddletek.com/',
   },
   {
     name: 'Muev',
     role: 'Jersey Sponsor',
-    blurb: 'Behind the jerseys that put Michigan Pickleball on the court in club colors.',
     url: 'https://muevbrand.com/',
   },
 ] as const
@@ -72,7 +69,7 @@ export const tryoutInfo = {
     { date: 'September 9', time: '9–11 PM' },
   ],
   chooseOne: true,
-  location: 'Varsity Pickleball, Ypsilanti',
+  location: 'Varsity Pickleball',
   callback: { date: 'September 15', time: '9–11 PM' },
   ridesNote: 'Rides will be coordinated for anyone who needs a ride to and from tryouts.',
   signupUrl:

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { execTeam } from '../data/club'
 import { execPhotos } from '../data/gallery'
@@ -33,19 +32,6 @@ export default function Exec() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-10 border-l-2 border-maize pl-5 max-w-2xl">
-          <h2 className="text-lg mb-2">Want to Get in Touch With Exec?</h2>
-          <p className="text-ink-soft text-sm leading-relaxed">
-            Whether it's a question about tryouts, an idea for the club, or a
-            sponsorship inquiry, the fastest way to reach the exec board is
-            through our{' '}
-            <Link to="/contact" className="underline underline-offset-2 text-navy">
-              contact page
-            </Link>
-            .
-          </p>
         </div>
       </section>
     </div>

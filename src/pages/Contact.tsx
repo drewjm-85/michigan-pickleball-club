@@ -57,10 +57,6 @@ export default function Contact() {
           >
             Send Message
           </button>
-
-          <p className="text-xs text-ink-soft/70">
-            This form is handled by Formspree — we'll never share your info.
-          </p>
         </form>
 
         <div className="flex flex-col gap-6">
