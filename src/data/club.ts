@@ -69,6 +69,7 @@ export const pastResults = [
     location: 'Boston, MA',
     result: 'Champions',
     note: 'Earned a bid to DUPR Nationals',
+    instagramUrl: 'https://www.instagram.com/p/DQU6nC0D4_n/?img_index=1',
   },
   {
     season: '2025',
@@ -76,6 +77,7 @@ export const pastResults = [
     location: 'Texas',
     result: 'Champions',
     note: 'Earned a bid to NCPA Nationals',
+    instagramUrl: 'https://www.instagram.com/p/DQ18C8fCfO2/?img_index=1',
   },
 ] as const
 

@@ -8,22 +8,50 @@ export default function Results() {
       <PageHero eyebrow="Scoreboard" title="Results" />
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-14">
-        <h2 className="text-2xl sm:text-3xl mb-6">2025 Season</h2>
-        <div className="grid gap-6 sm:grid-cols-2 mb-14">
-          {pastResults.map((r) => (
-            <div key={r.name} className="bg-white border-t-4 border-maize p-6">
-              <div className="flex items-baseline justify-between gap-2">
-                <p className="font-display text-navy text-lg uppercase tracking-wide">{r.name}</p>
-                <span className="font-mono-num text-xs uppercase tracking-wide text-ink-soft shrink-0">
-                  {r.location}
-                </span>
-              </div>
-              <p className="font-display text-maize-soft bg-navy inline-block px-3 py-1 text-sm uppercase tracking-wide mt-3">
-                {r.result}
-              </p>
-              <p className="text-ink-soft text-sm leading-relaxed mt-3">{r.note}</p>
-            </div>
-          ))}
+        <div className="bg-white border border-line overflow-hidden mb-10">
+          <div className="bg-court px-6 py-4 border-b border-line flex items-center justify-between flex-wrap gap-2">
+            <h2 className="text-lg m-0">2025 Season</h2>
+            <span className="font-mono-num text-xs uppercase tracking-wide text-ink-soft">
+              2 Championships
+            </span>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="text-left border-b border-line">
+                  <th className="px-6 py-3 font-display uppercase tracking-wide text-xs text-ink-soft">
+                    Tournament
+                  </th>
+                  <th className="px-6 py-3 font-display uppercase tracking-wide text-xs text-ink-soft">
+                    Location
+                  </th>
+                  <th className="px-6 py-3 font-display uppercase tracking-wide text-xs text-ink-soft">
+                    Result
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {pastResults.map((r) => (
+                  <tr key={r.name} className="border-b border-line last:border-0">
+                    <td className="px-6 py-4 font-medium text-navy">{r.name}</td>
+                    <td className="px-6 py-4 font-mono-num text-ink-soft">{r.location}</td>
+                    <td className="px-6 py-4 text-ink-soft">
+                      <span className="text-navy font-medium">{r.result}</span> —{' '}
+                      <a
+                        href={r.instagramUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline underline-offset-2 text-navy"
+                      >
+                        {r.note} ↗
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <div className="bg-white border border-line overflow-hidden">
