@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { clubFoundedYear, sponsors, tournaments, tryoutInfo } from '../data/club'
+import { clubFoundedYear, donationUrl, sponsors, tournaments, tryoutInfo } from '../data/club'
 import { galleryPhotos, heroPhoto, sponsorLogos } from '../data/gallery'
 
 export default function Home() {
@@ -58,12 +58,14 @@ export default function Home() {
             tournaments. We're entirely student-run, so donations go straight to
             tryouts, travel, and gear.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href={donationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 inline-flex items-center gap-2 font-display uppercase tracking-wide text-sm text-navy border-b-2 border-maize pb-1 hover:text-navy-deep"
           >
-            Ask About Donating →
-          </Link>
+            Donate Today →
+          </a>
         </div>
 
         <div className="bg-white border border-line p-6">

@@ -96,3 +96,5 @@ export const tryoutInfo = {
 }
 
 export const clubFoundedYear = 2021
+
+export const donationUrl = 'https://www.gofundme.com/f/67xmdk-support-the-michigan-pickleball-club'
