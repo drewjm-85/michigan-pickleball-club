@@ -79,12 +79,9 @@ export default function Home() {
                 <div className="font-mono-num text-navy text-sm font-bold shrink-0 pt-0.5 w-24">
                   {t.dateRange}
                 </div>
-                <div>
-                  <p className="font-display text-navy text-sm uppercase tracking-wide">
-                    {t.name}
-                  </p>
-                  <p className="text-ink-soft text-sm mt-1">{t.blurb}</p>
-                </div>
+                <p className="font-display text-navy text-sm uppercase tracking-wide">
+                  {t.name}
+                </p>
               </li>
             ))}
           </ul>

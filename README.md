@@ -1,7 +1,7 @@
 # Michigan Pickleball Club
 
 Official website for the Michigan Pickleball Club — a student club at the
-University of Michigan since 2021. Club info, tryout info, exec board bios,
+University of Michigan since 2022. Club info, tryout info, exec board bios,
 results, sponsors, and contact info.
 
 This is a standalone project, unrelated to any other repository.

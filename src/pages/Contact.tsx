@@ -26,11 +26,7 @@ function InstagramIcon() {
 export default function Contact() {
   return (
     <div>
-      <PageHero
-        eyebrow="Get in Touch"
-        title="Contact Us"
-        lede="Questions about the club, tryouts, results, or sponsorship — reach out any time."
-      />
+      <PageHero eyebrow="Get in Touch" title="Contact Us" />
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-14">
         <div className="grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
@@ -58,6 +54,11 @@ export default function Contact() {
             </div>
           </a>
         </div>
+
+        <p className="text-ink-soft text-sm text-center max-w-xl mx-auto mt-8">
+          Questions about the club, tryouts, results, or sponsorship — reach out
+          any time.
+        </p>
       </section>
     </div>
   )

@@ -53,12 +53,10 @@ export const tournaments = [
   {
     name: 'Grand Rapids PPA Challenger',
     dateRange: 'Sep 18–20',
-    blurb: 'Club members compete at the PPA Challenger level in Grand Rapids.',
   },
   {
     name: 'Metro Detroit Open',
     dateRange: 'Sep 25–27',
-    blurb: 'The club heads to the Metro Detroit Open to close out September.',
   },
 ] as const
 
@@ -95,6 +93,6 @@ export const tryoutInfo = {
     'https://docs.google.com/forms/d/e/1FAIpQLScma6xSm3qM8np5SWtXCein0ubvDPZlosTMg2TgE2psZD6UlQ/viewform?usp=publish-editor',
 }
 
-export const clubFoundedYear = 2021
+export const clubFoundedYear = 2022
 
 export const donationUrl = 'https://www.gofundme.com/f/67xmdk-support-the-michigan-pickleball-club'

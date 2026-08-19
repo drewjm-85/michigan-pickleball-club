@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-import { tryoutInfo } from '../data/club'
+import { clubFoundedYear, tryoutInfo } from '../data/club'
 
 const navItems = [
   { to: '/', label: 'Home' },
@@ -119,7 +119,7 @@ export default function Layout() {
               </span>
             </div>
             <p className="text-sm leading-relaxed">
-              A student club at the University of Michigan, on the courts since 2021.
+              A student club at the University of Michigan, on the courts since {clubFoundedYear}.
             </p>
           </div>
           <div>
