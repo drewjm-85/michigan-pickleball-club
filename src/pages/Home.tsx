@@ -3,8 +3,6 @@ import { clubFoundedYear, sponsors, tournaments, tryoutInfo } from '../data/club
 import { galleryPhotos, heroPhoto, sponsorLogos } from '../data/gallery'
 
 export default function Home() {
-  const yearsRunning = new Date().getFullYear() - clubFoundedYear
-
   return (
     <div>
       <section className="bg-navy text-white relative overflow-hidden">
@@ -24,10 +22,6 @@ export default function Home() {
             <h1 className="text-white text-5xl sm:text-6xl font-semibold max-w-3xl">
               Michigan Pickleball Club
             </h1>
-            <p className="mt-5 max-w-xl text-white/80 text-lg leading-relaxed normal-case font-body">
-              Maize, blue, and the kitchen line. We're a student-run competitive and
-              social pickleball club, {yearsRunning} years strong.
-            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/tryouts"
@@ -64,12 +58,12 @@ export default function Home() {
             tournaments. We're entirely student-run, so donations go straight to
             tryouts, travel, and gear.
           </p>
-          <a
-            href="mailto:michiganpickleballclub@umich.edu?subject=Donation%20Inquiry"
+          <Link
+            to="/contact"
             className="mt-6 inline-flex items-center gap-2 font-display uppercase tracking-wide text-sm text-navy border-b-2 border-maize pb-1 hover:text-navy-deep"
           >
             Ask About Donating →
-          </a>
+          </Link>
         </div>
 
         <div className="bg-white border border-line p-6">

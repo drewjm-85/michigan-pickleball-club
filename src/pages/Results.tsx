@@ -5,11 +5,7 @@ import { tournaments } from '../data/club'
 export default function Results() {
   return (
     <div>
-      <PageHero
-        eyebrow="Scoreboard"
-        title="Results"
-        lede="Match and tournament results, updated as the season plays out."
-      />
+      <PageHero eyebrow="Scoreboard" title="Results" />
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-14">
         <div className="bg-white border border-line overflow-hidden">

@@ -5,11 +5,7 @@ import { execPhotos } from '../data/gallery'
 export default function Exec() {
   return (
     <div>
-      <PageHero
-        eyebrow="Leadership"
-        title="Exec Board"
-        lede="Six students who run the club day to day — tournaments, sponsorships, tryouts, and everything in between."
-      />
+      <PageHero eyebrow="Leadership" title="Exec Board" />
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-14">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
