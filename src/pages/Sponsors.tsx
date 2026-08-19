@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { sponsors } from '../data/club'
-import { sponsorActionPhoto, sponsorLogos } from '../data/gallery'
+import { sponsorLogos } from '../data/gallery'
 
 export default function Sponsors() {
   return (
@@ -26,21 +26,17 @@ export default function Sponsors() {
                 {s.role}
               </p>
               <p className="text-ink-soft text-sm leading-relaxed mt-4">{s.blurb}</p>
+              <a
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-1 font-display uppercase tracking-wide text-xs text-navy border-b-2 border-maize pb-1 self-start hover:text-navy-deep"
+              >
+                Visit Site ↗
+              </a>
             </div>
           ))}
         </div>
-
-        <figure className="mt-10">
-          <img
-            src={sponsorActionPhoto.src}
-            alt={sponsorActionPhoto.alt}
-            loading="lazy"
-            className="w-full max-h-[520px] object-cover object-top border-y-4 border-maize"
-          />
-          <figcaption className="text-ink-soft text-xs mt-2 text-center">
-            Laced in Babolat, swinging PaddleTek, suited up in Muev.
-          </figcaption>
-        </figure>
 
         <div className="mt-10 bg-navy text-white px-6 py-10 sm:px-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>

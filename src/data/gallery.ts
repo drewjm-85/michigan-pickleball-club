@@ -3,7 +3,6 @@ import tryoutGroup from '../assets/photos/action-tryout-pair.jpg'
 import tryoutPairOriginal from '../assets/photos/action-tryout-pair-original.jpg'
 import vpPairRailing from '../assets/photos/action-vp-pair-railing.jpg'
 import teamNavyGroup from '../assets/photos/team-navy-group.jpg'
-import teamWhitePaddletekGroup from '../assets/photos/team-white-paddletek-group.jpg'
 
 import babolatLogo from '../assets/photos/sponsor-babolat-logo.webp'
 import paddletekLogo from '../assets/photos/sponsor-paddletek-logo.webp'
@@ -51,11 +50,6 @@ export const sponsorLogos = {
 export const tryoutsPagePhoto = {
   src: tryoutGroup,
   alt: 'Six Michigan Pickleball Club members holding paddles at an indoor tournament',
-}
-
-export const sponsorActionPhoto = {
-  src: teamWhitePaddletekGroup,
-  alt: 'The full team in white Michigan Pickleball Club jerseys holding PaddleTek paddles',
 }
 
 export const execPhotos = {
