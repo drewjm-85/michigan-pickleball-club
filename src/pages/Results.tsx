@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
-import { tournaments } from '../data/club'
+import { pastResults, tournaments } from '../data/club'
 
 export default function Results() {
   return (
@@ -8,6 +8,24 @@ export default function Results() {
       <PageHero eyebrow="Scoreboard" title="Results" />
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-14">
+        <h2 className="text-2xl sm:text-3xl mb-6">2025 Season</h2>
+        <div className="grid gap-6 sm:grid-cols-2 mb-14">
+          {pastResults.map((r) => (
+            <div key={r.name} className="bg-white border-t-4 border-maize p-6">
+              <div className="flex items-baseline justify-between gap-2">
+                <p className="font-display text-navy text-lg uppercase tracking-wide">{r.name}</p>
+                <span className="font-mono-num text-xs uppercase tracking-wide text-ink-soft shrink-0">
+                  {r.location}
+                </span>
+              </div>
+              <p className="font-display text-maize-soft bg-navy inline-block px-3 py-1 text-sm uppercase tracking-wide mt-3">
+                {r.result}
+              </p>
+              <p className="text-ink-soft text-sm leading-relaxed mt-3">{r.note}</p>
+            </div>
+          ))}
+        </div>
+
         <div className="bg-white border border-line overflow-hidden">
           <div className="bg-court px-6 py-4 border-b border-line flex items-center justify-between flex-wrap gap-2">
             <h2 className="text-lg m-0">2026 Season</h2>

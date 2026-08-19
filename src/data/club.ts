@@ -62,6 +62,23 @@ export const tournaments = [
   },
 ] as const
 
+export const pastResults = [
+  {
+    season: '2025',
+    name: 'DUPR Campus Regional',
+    location: 'Boston, MA',
+    result: 'Champions',
+    note: 'Earned a bid to DUPR Nationals',
+  },
+  {
+    season: '2025',
+    name: 'NCPA Texas Regional',
+    location: 'Texas',
+    result: 'Champions',
+    note: 'Earned a bid to NCPA Nationals',
+  },
+] as const
+
 export const tryoutInfo = {
   cost: '$15',
   days: [
