@@ -59,18 +59,10 @@ export default function Home() {
         <div>
           <h2 className="text-2xl sm:text-3xl mb-4">Since {clubFoundedYear}</h2>
           <p className="text-ink-soft text-base leading-relaxed max-w-xl">
-            Michigan Pickleball Club started in {clubFoundedYear} as a handful of
-            students hitting a ball around on repurposed tennis courts. Since then
-            we've grown into a full competitive club — running tryouts every fall,
-            fielding teams for regional tournaments, and building a community for
-            players of every skill level who just want to be on a court together.
-          </p>
-          <p className="mt-4 text-ink-soft text-base leading-relaxed max-w-xl">
-            We're entirely student-run, which means everything from tournament
-            travel to court time depends on club dues and sponsor support. If
-            pickleball at Michigan matters to you, a donation goes directly toward
-            keeping tryouts free of financial barriers, covering tournament entry
-            fees, and getting the team where it needs to be.
+            Started in {clubFoundedYear} on repurposed tennis courts, we're now a
+            full competitive club — tryouts every fall, teams at regional
+            tournaments. We're entirely student-run, so donations go straight to
+            tryouts, travel, and gear.
           </p>
           <a
             href="mailto:michiganpickleballclub@umich.edu?subject=Donation%20Inquiry"
@@ -130,10 +122,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
-        <h2 className="text-2xl sm:text-3xl mb-2">From the Courts</h2>
-        <p className="text-ink-soft text-base mb-8 max-w-xl">
-          A look at the club on and off the court.
-        </p>
+        <h2 className="text-2xl sm:text-3xl mb-8">From the Courts</h2>
         <div className="grid gap-6 sm:grid-cols-3">
           {galleryPhotos.map((photo) => (
             <figure key={photo.caption} className="group">

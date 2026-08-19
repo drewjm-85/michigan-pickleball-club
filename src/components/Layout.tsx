@@ -11,15 +11,22 @@ const navItems = [
   { to: '/contact', label: 'Contact' },
 ]
 
+const BALL_HOLES: [number, number, number][] = [
+  [20, 7, 1.7], [11, 9, 1.5], [29, 9, 1.4],
+  [14.5, 15, 1.8], [24, 13.5, 1.6], [33.5, 16, 1.3], [7, 16, 1.4],
+  [20, 20, 1.9],
+  [10, 23, 1.7], [30, 22, 1.6], [33.5, 25, 1.3], [6.5, 25, 1.3],
+  [16, 28, 1.6], [25, 28, 1.4],
+  [20.5, 33, 1.5], [14, 32.5, 1.3], [27, 32.5, 1.3],
+]
+
 function BallMark({ className = '' }: { className?: string }) {
   return (
     <svg viewBox="0 0 40 40" className={className} aria-hidden="true">
-      <circle cx="20" cy="20" r="18" fill="var(--color-maize)" />
-      {[
-        [20, 6], [20, 34], [6, 20], [34, 20],
-        [10.3, 10.3], [29.7, 10.3], [10.3, 29.7], [29.7, 29.7],
-      ].map(([cx, cy], i) => (
-        <circle key={i} cx={cx} cy={cy} r="1.6" fill="var(--color-navy)" />
+      <circle cx="20" cy="20" r="19" fill="white" />
+      <circle cx="20" cy="20" r="17.5" fill="var(--color-maize)" stroke="var(--color-navy)" strokeWidth="1" />
+      {BALL_HOLES.map(([cx, cy, r], i) => (
+        <circle key={i} cx={cx} cy={cy} r={r} fill="var(--color-navy)" />
       ))}
     </svg>
   )
