@@ -22,7 +22,7 @@ export const galleryPhotos = [
   },
   {
     src: tryoutPair,
-    alt: 'Two club members on an indoor pickleball court holding paddles',
+    alt: 'Six Michigan Pickleball Club members holding paddles at an indoor tournament',
     caption: 'On the Court',
     detail: '',
   },

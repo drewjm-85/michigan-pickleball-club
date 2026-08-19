@@ -134,8 +134,27 @@ export default function Home() {
         <p className="text-ink-soft text-base mb-8 max-w-xl">
           A look at the club on and off the court.
         </p>
-        <div className="grid gap-6 sm:grid-cols-3">
-          {galleryPhotos.map((photo) => (
+        <figure className="group mb-6">
+          <div className="overflow-hidden bg-navy">
+            <img
+              src={galleryPhotos[1].src}
+              alt={galleryPhotos[1].alt}
+              loading="lazy"
+              className="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <figcaption className="mt-3">
+            <p className="font-display text-navy text-sm uppercase tracking-wide">
+              {galleryPhotos[1].caption}
+            </p>
+            {galleryPhotos[1].detail && (
+              <p className="text-ink-soft text-xs mt-1">{galleryPhotos[1].detail}</p>
+            )}
+          </figcaption>
+        </figure>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          {[galleryPhotos[0], galleryPhotos[2]].map((photo) => (
             <figure key={photo.caption} className="group">
               <div className="overflow-hidden bg-navy">
                 <img
