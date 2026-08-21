@@ -54,9 +54,8 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl mb-4">Since {clubFoundedYear}</h2>
           <p className="text-ink-soft text-base leading-relaxed max-w-xl">
             Started in {clubFoundedYear} on repurposed tennis courts, we're now a
-            full competitive club — tryouts every fall, teams at regional
-            tournaments. We're entirely student-run, so donations go straight to
-            tryouts, travel, and gear.
+            full competitive club. We're entirely student-run, so donations go
+            straight to tryouts, travel, and gear.
           </p>
           <a
             href={donationUrl}
