@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { clubFoundedYear, donationUrl, sponsors, tournaments } from '../data/club'
+import { clubFoundedYear, donationUrl, seasons, sponsors } from '../data/club'
 import { galleryPhotos, heroPhoto, sponsorLogos } from '../data/gallery'
 
 export default function Home() {
@@ -68,22 +68,26 @@ export default function Home() {
         </div>
 
         <div className="bg-white border border-line p-6">
-          <h2 className="text-xl mb-1">On the Calendar</h2>
+          <h2 className="text-xl mb-1">Latest Results</h2>
           <p className="font-mono-num text-xs uppercase tracking-wide text-ink-soft mb-5">
-            September Tournaments
+            {seasons[0].season} Season
           </p>
           <ul className="flex flex-col gap-5">
-            {tournaments.map((t) => (
-              <li key={t.name} className="flex gap-4">
-                <div className="font-mono-num text-navy text-sm font-bold shrink-0 pt-0.5 w-24">
-                  {t.dateRange}
+            {seasons[0].results.map((r) => (
+              <li key={r.name} className="flex gap-4">
+                <div className="font-mono-num text-navy text-sm font-bold shrink-0 pt-0.5 w-28">
+                  {r.result}
                 </div>
-                <p className="font-display text-navy text-sm uppercase tracking-wide">
-                  {t.name}
-                </p>
+                <div>
+                  <p className="font-display text-navy text-sm uppercase tracking-wide">{r.name}</p>
+                  <p className="text-ink-soft text-xs mt-1">{r.location}</p>
+                </div>
               </li>
             ))}
           </ul>
+          <Link to="/results" className="mt-6 inline-block text-sm font-display uppercase tracking-wide text-navy underline underline-offset-4">
+            All Results
+          </Link>
         </div>
       </section>
 
