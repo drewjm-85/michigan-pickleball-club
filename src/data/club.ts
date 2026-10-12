@@ -20,7 +20,7 @@ export const execTeam = [
     grad: 'Class of 2029',
   },
   {
-    name: 'Kelly Lenart',
+    name: 'Kelly Linart',
     role: "Women's Captain",
     grad: 'Class of 2027',
   },

@@ -11,7 +11,7 @@ import lelandPhoto from '../assets/photos/exec-leland-branco.jpg'
 import calebPhoto from '../assets/photos/exec-caleb-hyun.jpg'
 import asherPhoto from '../assets/photos/exec-asher-smith.jpg'
 import andrewPhoto from '../assets/photos/exec-andrew-murphy.jpg'
-import kellyPhoto from '../assets/photos/exec-kelly-lenart.jpg'
+import kellyPhoto from '../assets/photos/exec-kelly-linart.jpg'
 import nathanPhoto from '../assets/photos/exec-nathan-bishop.jpg'
 
 export const heroPhoto = {
@@ -51,6 +51,6 @@ export const execPhotos = {
   'Caleb Hyun': calebPhoto,
   'Asher Smith': asherPhoto,
   'Andrew Murphy': andrewPhoto,
-  'Kelly Lenart': kellyPhoto,
+  'Kelly Linart': kellyPhoto,
   'Nathan Bishop': nathanPhoto,
 } as const
