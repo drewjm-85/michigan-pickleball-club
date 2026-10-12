@@ -49,35 +49,57 @@ export const sponsors = [
   },
 ] as const
 
-export const tournaments = [
-  {
-    name: 'Grand Rapids PPA Challenger',
-    dateRange: 'Sep 18–20',
-  },
-  {
-    name: 'Metro Detroit Open',
-    dateRange: 'Sep 25–27',
-  },
-] as const
+export type TournamentResult = {
+  name: string
+  location: string
+  result: string
+  note: string
+  instagramUrl: string
+}
 
-export const pastResults = [
+// Newest season first; events within a season in the order they happened.
+export const seasons: { season: string; summary: string; results: TournamentResult[] }[] = [
   {
-    season: '2025',
-    name: 'DUPR Campus Regional',
-    location: 'Boston, MA',
-    result: 'Champions',
-    note: 'Earned a bid to DUPR Nationals',
-    instagramUrl: 'https://www.instagram.com/p/DQU6nC0D4_n/?img_index=1',
+    season: '2026',
+    summary: 'Nationals bid secured',
+    results: [
+      {
+        name: 'Boiler Bash Regional 300',
+        location: 'West Lafayette, IN',
+        result: '3rd Place',
+        note: 'See the recap',
+        instagramUrl: 'https://www.instagram.com/p/DeFT0w2ifjS/?img_index=1',
+      },
+      {
+        name: 'NCPA Indiana Regional',
+        location: 'Indiana',
+        result: 'Nationals Bid',
+        note: 'Qualified for NCPA Nationals',
+        instagramUrl: 'https://www.instagram.com/p/DeVo0tzjTja/?img_index=10',
+      },
+    ],
   },
   {
     season: '2025',
-    name: 'NCPA Texas Regional',
-    location: 'Texas',
-    result: 'Champions',
-    note: 'Earned a bid to NCPA Nationals',
-    instagramUrl: 'https://www.instagram.com/p/DQ18C8fCfO2/?img_index=1',
+    summary: '2 Championships',
+    results: [
+      {
+        name: 'DUPR Campus Regional',
+        location: 'Boston, MA',
+        result: 'Champions',
+        note: 'Earned a bid to DUPR Nationals',
+        instagramUrl: 'https://www.instagram.com/p/DQU6nC0D4_n/?img_index=1',
+      },
+      {
+        name: 'NCPA Texas Regional',
+        location: 'Texas',
+        result: 'Champions',
+        note: 'Earned a bid to NCPA Nationals',
+        instagramUrl: 'https://www.instagram.com/p/DQ18C8fCfO2/?img_index=1',
+      },
+    ],
   },
-] as const
+]
 
 export const clubFoundedYear = 2022
 
