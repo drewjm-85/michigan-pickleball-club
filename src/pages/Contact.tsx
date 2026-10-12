@@ -56,7 +56,7 @@ export default function Contact() {
         </div>
 
         <p className="text-ink-soft text-sm text-center max-w-xl mx-auto mt-8">
-          Questions about the club, tryouts, results, or sponsorship — reach out
+          Questions about the club, results, or sponsorship — reach out
           any time.
         </p>
       </section>

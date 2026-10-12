@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-import { clubFoundedYear, tryoutInfo } from '../data/club'
+import { clubFoundedYear } from '../data/club'
 
 const navItems = [
   { to: '/', label: 'Home' },
-  { to: '/tryouts', label: 'Tryouts' },
   { to: '/exec', label: 'Exec Board' },
   { to: '/results', label: 'Results' },
   { to: '/sponsors', label: 'Sponsors' },
@@ -98,13 +97,6 @@ export default function Layout() {
         )}
       </header>
 
-      <div className="bg-maize text-navy text-center text-sm font-medium py-2 px-4">
-        Tryouts are {tryoutInfo.days.map((d) => d.date).join(' & ')} — {' '}
-        <NavLink to="/tryouts" className="underline underline-offset-2 font-semibold">
-          get the details
-        </NavLink>
-      </div>
-
       <main className="flex-1">
         <Outlet />
       </main>
@@ -125,7 +117,6 @@ export default function Layout() {
           <div>
             <h3 className="font-display text-white text-sm uppercase tracking-wide mb-3">Club</h3>
             <ul className="flex flex-col gap-2 text-sm">
-              <li><NavLink to="/tryouts" className="hover:text-maize">Tryouts</NavLink></li>
               <li><NavLink to="/exec" className="hover:text-maize">Exec Board</NavLink></li>
               <li><NavLink to="/results" className="hover:text-maize">Results</NavLink></li>
               <li><NavLink to="/sponsors" className="hover:text-maize">Sponsors</NavLink></li>
@@ -134,7 +125,7 @@ export default function Layout() {
           <div>
             <h3 className="font-display text-white text-sm uppercase tracking-wide mb-3">Get in Touch</h3>
             <p className="text-sm leading-relaxed mb-3">
-              Questions about the club, tryouts, or sponsorship?
+              Questions about the club or sponsorship?
             </p>
             <NavLink
               to="/contact"

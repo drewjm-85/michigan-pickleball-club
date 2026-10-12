@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { clubFoundedYear, donationUrl, sponsors, tournaments, tryoutInfo } from '../data/club'
+import { clubFoundedYear, donationUrl, sponsors, tournaments } from '../data/club'
 import { galleryPhotos, heroPhoto, sponsorLogos } from '../data/gallery'
 
 export default function Home() {
@@ -24,10 +24,10 @@ export default function Home() {
             </h1>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                to="/tryouts"
+                to="/results"
                 className="bg-maize text-navy font-display uppercase tracking-wide text-sm px-6 py-3 hover:bg-maize-soft transition-colors"
               >
-                Tryout Info — Sep {tryoutInfo.days[0].date.split(' ')[1]}–{tryoutInfo.days[1].date.split(' ')[1]}
+                See Our Results
               </Link>
               <Link
                 to="/contact"
@@ -132,26 +132,6 @@ export default function Home() {
               </figcaption>
             </figure>
           ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
-        <div className="bg-navy text-white px-6 py-10 sm:px-10 sm:py-12 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-          <div>
-            <h2 className="text-white text-2xl sm:text-3xl">Ready to Try Out?</h2>
-            <p className="text-white/80 mt-2 max-w-md normal-case font-body">
-              {tryoutInfo.days.map((d) => d.date).join(' or ')} at {tryoutInfo.location}.
-              All skill levels welcome — come have fun.
-            </p>
-          </div>
-          <a
-            href={tryoutInfo.signupUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-maize text-navy font-display uppercase tracking-wide text-sm px-6 py-3 hover:bg-maize-soft transition-colors whitespace-nowrap text-center"
-          >
-            Sign Up Now
-          </a>
         </div>
       </section>
     </div>

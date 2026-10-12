@@ -79,20 +79,6 @@ export const pastResults = [
   },
 ] as const
 
-export const tryoutInfo = {
-  cost: '$15',
-  days: [
-    { date: 'September 8', time: '9–11 PM' },
-    { date: 'September 9', time: '9–11 PM' },
-  ],
-  chooseOne: true,
-  location: 'Varsity Pickleball',
-  callback: { date: 'September 15', time: '9–11 PM' },
-  ridesNote: 'Rides will be coordinated for anyone who needs a ride to and from tryouts.',
-  signupUrl:
-    'https://docs.google.com/forms/d/e/1FAIpQLScma6xSm3qM8np5SWtXCein0ubvDPZlosTMg2TgE2psZD6UlQ/viewform?usp=publish-editor',
-}
-
 export const clubFoundedYear = 2022
 
 export const donationUrl = 'https://www.gofundme.com/f/67xmdk-support-the-michigan-pickleball-club'

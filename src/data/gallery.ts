@@ -1,5 +1,4 @@
 import checkPresentation from '../assets/photos/action-check-presentation.jpg'
-import tryoutGroup from '../assets/photos/action-tryout-pair.jpg'
 import tryoutPairOriginal from '../assets/photos/action-tryout-pair-original.jpg'
 import vpPairRailing from '../assets/photos/action-vp-pair-railing.jpg'
 import teamNavyGroup from '../assets/photos/team-navy-group.jpg'
@@ -46,11 +45,6 @@ export const sponsorLogos = {
   PaddleTek: paddletekLogo,
   Muev: muevLogo,
 } as const
-
-export const tryoutsPagePhoto = {
-  src: tryoutGroup,
-  alt: 'Six Michigan Pickleball Club members holding paddles at an indoor tournament',
-}
 
 export const execPhotos = {
   'Leland Branco': lelandPhoto,

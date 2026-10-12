@@ -1,7 +1,7 @@
 # Michigan Pickleball Club
 
 Official website for the Michigan Pickleball Club — a student club at the
-University of Michigan since 2022. Club info, tryout info, exec board bios,
+University of Michigan since 2022. Club info, exec board bios,
 results, sponsors, and contact info.
 
 This is a standalone project, unrelated to any other repository.
@@ -29,7 +29,7 @@ npm run build
 ## Deploy
 
 Deployed on Vercel. `vercel.json` contains a rewrite so client-side routes
-(e.g. `/tryouts`) work on direct load/refresh.
+(e.g. `/results`) work on direct load/refresh.
 
 ## Contact
 
