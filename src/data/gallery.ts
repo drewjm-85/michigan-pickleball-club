@@ -6,7 +6,7 @@ import tournamentForehand from '../assets/photos/tournament-forehand-ncpa.jpg'
 import tournamentCelebration from '../assets/photos/tournament-celebration.jpg'
 import tournamentBracket from '../assets/photos/tournament-bracket-east.jpg'
 import tournamentTeamCourt from '../assets/photos/tournament-team-court.jpg'
-import teamNavyGroup from '../assets/photos/team-navy-group.jpg'
+import teamBlackGroup from '../assets/photos/team-black-group.jpg'
 
 import babolatLogo from '../assets/photos/sponsor-babolat-logo.webp'
 import paddletekLogo from '../assets/photos/sponsor-paddletek-logo.webp'
@@ -20,8 +20,8 @@ import kellyPhoto from '../assets/photos/exec-kelly-linart.jpg'
 import nathanPhoto from '../assets/photos/exec-nathan-bishop.jpg'
 
 export const heroPhoto = {
-  src: teamNavyGroup,
-  alt: 'Michigan Pickleball Club members posing together as a team',
+  src: teamBlackGroup,
+  alt: 'Michigan Pickleball Club team posing at the net in black club jerseys, holding paddles',
 }
 
 export const galleryPhotos = [
