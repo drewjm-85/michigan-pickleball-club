@@ -81,8 +81,8 @@ export const seasons: { season: string; summary: string; results: TournamentResu
       },
       {
         name: 'NCPA Indiana Regional',
-        location: 'Indiana',
-        result: 'Nationals Bid',
+        location: 'Noblesville, IN',
+        result: 'Semifinals',
         links: [
           { label: 'Qualified for NCPA Nationals', url: 'https://www.instagram.com/p/DeVo0tzjTja/?img_index=10' },
         ],
@@ -100,7 +100,7 @@ export const seasons: { season: string; summary: string; results: TournamentResu
       },
       {
         name: 'NCPA Global Championship',
-        location: 'Missouri',
+        location: 'Bridgeton, MO',
         date: 'Nov 15, 2026',
         result: '2nd Place',
         links: [
