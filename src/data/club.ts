@@ -105,6 +105,7 @@ export const seasons: { season: string; summary: string; results: TournamentResu
         date: 'Nov 15, 2026',
         result: '2nd Place',
         links: [
+          { label: 'Bracket', url: 'https://tournaments.ncpaofficial.com/brackets/3094' },
           { label: 'See the recap', url: 'https://www.instagram.com/p/Df-3RgZownR/' },
         ],
       },
