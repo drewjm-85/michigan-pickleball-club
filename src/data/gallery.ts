@@ -1,6 +1,11 @@
 import checkPresentation from '../assets/photos/action-check-presentation.jpg'
 import tryoutPairOriginal from '../assets/photos/action-tryout-pair-original.jpg'
 import vpPairRailing from '../assets/photos/action-vp-pair-railing.jpg'
+import tournamentWhiteJersey from '../assets/photos/tournament-white-jersey.jpg'
+import tournamentForehand from '../assets/photos/tournament-forehand-ncpa.jpg'
+import tournamentCelebration from '../assets/photos/tournament-celebration.jpg'
+import tournamentBracket from '../assets/photos/tournament-bracket-east.jpg'
+import tournamentTeamCourt from '../assets/photos/tournament-team-court.jpg'
 import teamNavyGroup from '../assets/photos/team-navy-group.jpg'
 
 import babolatLogo from '../assets/photos/sponsor-babolat-logo.webp'
@@ -37,6 +42,34 @@ export const galleryPhotos = [
     alt: 'Two club members at a club open house event',
     caption: 'Close Friendships',
     detail: '',
+  },
+] as const
+
+export const tournamentPhotos = [
+  {
+    src: tournamentBracket,
+    alt: 'Michigan players pointing to the Michigan spot in the East region of the NCPA bracket',
+    caption: 'NCPA Bracket',
+  },
+  {
+    src: tournamentForehand,
+    alt: 'A Michigan player hitting a forehand on an indoor court at an NCPA event',
+    caption: 'NCPA Match Play',
+  },
+  {
+    src: tournamentCelebration,
+    alt: 'A Michigan player celebrating a point with a fist pump',
+    caption: 'Big Point',
+  },
+  {
+    src: tournamentTeamCourt,
+    alt: 'Five Michigan Pickleball Club players posing at the net in club jerseys',
+    caption: 'Team Michigan',
+  },
+  {
+    src: tournamentWhiteJersey,
+    alt: 'A Michigan player in a white club jersey between games at an outdoor tournament',
+    caption: 'Between Games',
   },
 ] as const
 

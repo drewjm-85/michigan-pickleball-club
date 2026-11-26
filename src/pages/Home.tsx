@@ -73,7 +73,7 @@ export default function Home() {
             {seasons[0].season} Season
           </p>
           <ul className="flex flex-col gap-5">
-            {seasons[0].results.map((r) => (
+            {[...seasons[0].results].reverse().map((r) => (
               <li key={r.name} className="flex gap-4">
                 <div className="font-mono-num text-navy text-sm font-bold shrink-0 pt-0.5 w-28">
                   {r.result}

@@ -49,33 +49,63 @@ export const sponsors = [
   },
 ] as const
 
+export type TournamentLink = {
+  label: string
+  url: string
+}
+
 export type TournamentResult = {
   name: string
   location: string
+  date?: string
   result: string
-  note: string
-  instagramUrl: string
+  note?: string
+  links: TournamentLink[]
 }
 
 // Newest season first; events within a season in the order they happened.
 export const seasons: { season: string; summary: string; results: TournamentResult[] }[] = [
   {
     season: '2026',
-    summary: 'Nationals bid secured',
+    summary: '2nd at NCPA Global Championship',
     results: [
       {
         name: 'Boiler Bash Regional 300',
         location: 'West Lafayette, IN',
         result: '3rd Place',
-        note: 'See the recap',
-        instagramUrl: 'https://www.instagram.com/p/DeFT0w2ifjS/?img_index=1',
+        note: 'Plus a second team in the quarterfinals',
+        links: [
+          { label: 'Tournament page', url: 'https://purduepickleballclub.com/tournaments/boiler-bash-300' },
+          { label: 'See the recap', url: 'https://www.instagram.com/p/DeFT0w2ifjS/?img_index=1' },
+        ],
       },
       {
         name: 'NCPA Indiana Regional',
         location: 'Indiana',
         result: 'Nationals Bid',
-        note: 'Qualified for NCPA Nationals',
-        instagramUrl: 'https://www.instagram.com/p/DeVo0tzjTja/?img_index=10',
+        links: [
+          { label: 'Qualified for NCPA Nationals', url: 'https://www.instagram.com/p/DeVo0tzjTja/?img_index=10' },
+        ],
+      },
+      {
+        name: 'DUPR Ohio Super Regional',
+        location: 'Columbus, OH',
+        result: 'Quarterfinals',
+        links: [
+          {
+            label: 'DUPR recap',
+            url: 'https://www.dupr.com/post/ohio-state-wins-on-home-court-at-ohio-super-regional',
+          },
+        ],
+      },
+      {
+        name: 'NCPA Global Championship',
+        location: '',
+        date: 'Nov 15, 2026',
+        result: '2nd Place',
+        links: [
+          { label: 'See the recap', url: 'https://www.instagram.com/p/Df-3RgZownR/' },
+        ],
       },
     ],
   },
@@ -87,15 +117,17 @@ export const seasons: { season: string; summary: string; results: TournamentResu
         name: 'DUPR Campus Regional',
         location: 'Boston, MA',
         result: 'Champions',
-        note: 'Earned a bid to DUPR Nationals',
-        instagramUrl: 'https://www.instagram.com/p/DQU6nC0D4_n/?img_index=1',
+        links: [
+          { label: 'Earned a bid to DUPR Nationals', url: 'https://www.instagram.com/p/DQU6nC0D4_n/?img_index=1' },
+        ],
       },
       {
         name: 'NCPA Texas Regional',
         location: 'Texas',
         result: 'Champions',
-        note: 'Earned a bid to NCPA Nationals',
-        instagramUrl: 'https://www.instagram.com/p/DQ18C8fCfO2/?img_index=1',
+        links: [
+          { label: 'Earned a bid to NCPA Nationals', url: 'https://www.instagram.com/p/DQ18C8fCfO2/?img_index=1' },
+        ],
       },
     ],
   },
