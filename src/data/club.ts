@@ -84,6 +84,7 @@ export const seasons: { season: string; summary: string; results: TournamentResu
         location: 'Noblesville, IN',
         result: 'Semifinals',
         links: [
+          { label: 'Bracket', url: 'https://tournaments.ncpaofficial.com/brackets/3010' },
           { label: 'Qualified for NCPA Nationals', url: 'https://www.instagram.com/p/DeVo0tzjTja/?img_index=10' },
         ],
       },
