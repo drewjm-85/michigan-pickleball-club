@@ -100,7 +100,7 @@ export const seasons: { season: string; summary: string; results: TournamentResu
       },
       {
         name: 'NCPA Global Championship',
-        location: '',
+        location: 'Missouri',
         date: 'Nov 15, 2026',
         result: '2nd Place',
         links: [
